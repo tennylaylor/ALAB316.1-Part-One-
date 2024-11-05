@@ -1,4 +1,11 @@
-import ".styles.css";
+
+var menuLinks = [
+    { text: 'about', href: '/about' },
+    { text: 'catalog', href: '/catalog' },
+    { text: 'orders', href: '/orders' },
+    { text: 'account', href: '/account' },
+  ];
+
 
 const mainEl = document.querySelector('main');
 
@@ -16,13 +23,6 @@ const topMenuEl = document.getElementById('top-menu');
 topMenuEl.style.height = '100%';
 topMenuEl.style.backgroundColor = 'var(--top-menu-bg)';
 topMenuEl.classList.add('flex-around');
-
-const menuLinks = [
-    {href: '#home', text:'home'},
-    {href: '#about', text:'about'},
-    {href: '#services', text:'services'},
-    {href: '#contact', text:'contact'},
-];
 
 menuLinks.forEach(link => {
     const linkElement = document.createElement('a'); 

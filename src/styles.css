@@ -1,15 +1,15 @@
-*{
+* {
   box-sizing: border-box;
 }
 /* css custom properties*/
-:root{
+:root {
   --main-bg: #4a4e4d;
   --top-menu-bg: #0e9aa7;
   --sub-menu-bg: #3da4ab;
 }
 
-body{
-  font-family:  Tahoma, Geneva, sans-serif;
+body {
+  font-family: Tahoma, Geneva, sans-serif;
   height: 100vh;
   margin: 0;
   display: grid;
@@ -17,12 +17,12 @@ body{
   color: white;
 }
 .flex-ctr {
-display: flex;
-justify-content: center;
-align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.flex-around{
-  display:flex;
+.flex-around {
+  display: flex;
   justify-content: space-around;
   align-items: center;
 }
@@ -35,4 +35,23 @@ nav a {
 }
 #top-menu a:hover {
   background-color: var(--sub-menu-bg);
+}
+header,
+#top-menu {
+  position: relative;
+}
+#top-menu {
+  z-index: 20;
+}
+#sub-menu {
+  width: 100%;
+  z-index: 10;
+  transition: top 0.5s ease-out;
+}
+#sub-menu a:hover {
+  background-color: var(--top-menu-bg);
+}
+nav a.active {
+  background-color: var(--sub-menu-bg);
+  color: var(--main-bg);
 }

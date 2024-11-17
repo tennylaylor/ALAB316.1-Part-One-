@@ -11,7 +11,7 @@ JavaScript:  add elements and changing styles
 How to Get Started
 Clone the Repo:
 
-git clone https://github.com/yourusername/your-repo-name.git
+git clone [https://github.com/yourusername/your-repo-name.git](https://github.com/tennylaylor/ALAB316.1-Part-One-.git)
 
 
 
